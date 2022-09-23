@@ -7,6 +7,7 @@ const http = require('http'); // built in module
 
 const server = http.createServer((req, res) => {
   console.log(req); 
+  process.exit();
 });
 
-server.listen(3000) // start a process 
+server.listen(3000); // start a process 

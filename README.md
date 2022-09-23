@@ -5,16 +5,21 @@ This repository is learning/reviewing (Nodejs from Udemy)[https://www.udemy.com/
 - (first_app)[./first_app]
 
 ### Notes on node.js 
-Node allows for access to file systems and functionality both locally and within applications. This is often ran via server. 
+Node allows for access to file systems and functionality both locally and within applications. 
 
 - Use cases
 * JS Runtime
 * Server-side code 
 * Utility Script
 * Build Tools  
+* Run Server - creates and listens for reqs. 
+  * Business Logic - handling req. validate input, connect to db 
+  * Response  - return response (rendering in formats HTML, JSON, XML etc...)
 
 #### Run tools 
 Terminal -> node first_name.js
 
 #### Glossary 
 fs - filesystem
+
+##### Additional technologies used in the repository

@@ -25,7 +25,23 @@ const server = http.createServer((req, res) => {
   };
 
   if (url === "/message" && method === "POST") {
-    fs.writeFileSync('message.txt', 'PLACEHOLDER FOR NOW'); 
+
+    const body = []; //ending the value within, but not the variable itself
+
+    res.on('data', (chunk) => {
+      console.log('CHUNK >>\n',chunk); 
+      body.push(chunk);
+    }); //how use to listen to events
+
+    res.on('end', () => {
+      //creating a buffer and interact with the data
+      const parsedBody = Buffer.concat(body).toString();
+      console.log('PARSE BODY\n', parsedBody); 
+
+      const message = parsedBody.split('=')[1]; 
+      fs.writeFileSync('message.txt', message); 
+
+    }); // after this data is done
     res.statusCode = 302; 
     res.setHeader('Location', '/'); 
     return res.end(); 

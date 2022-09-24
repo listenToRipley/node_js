@@ -3,6 +3,7 @@ This repository is learning/reviewing (Nodejs from Udemy)[https://www.udemy.com/
 
 ## Content in this repository
 - (first_app)[./first_app]
+- (server)[./server]
 
 ### Notes on node.js 
 Node allows for access to file systems and functionality both locally and within applications. 
@@ -18,6 +19,10 @@ Node allows for access to file systems and functionality both locally and within
 
 #### Run tools 
 Terminal -> node first_name.js
+
+CTRL + C to exit terminal 
+
+
 
 #### Glossary 
 fs - filesystem

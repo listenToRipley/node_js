@@ -38,12 +38,13 @@ const server = http.createServer((req, res) => {
       console.log('PARSE BODY\n', parsedBody); 
 
       const message = parsedBody.split('=')[1];
-      fs.writeFileSync('message.txt', message);
+      fs.writeFileSync('message.txt', message, err => {
 
-      res.statusCode = 302;
-      res.setHeader('Location', '/');
-      return res.end();
-    // res.writeHead(302, {});//write meta information, 302 - redirect or use the above 
+        res.statusCode = 302;
+        res.setHeader('Location', '/');
+        return res.end();
+        // res.writeHead(302, {});//write meta information, 302 - redirect or use the above 
+      });
     });// after this data is done
   }
 

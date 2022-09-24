@@ -8,3 +8,5 @@ If you are going to be importing on of your own files as a module, make sure you
 Incoming data is sent via a stream. A stream is an on going process and allows requests to be broken up in to smaller sections. In order to really process this information in a way the can be save/run/viewed in these smaller sections, you use a buffer. It's a way for the information to "stop" and extract information before "released" out into a fulled parsed page. 
 
 See req.on() for more details. 
+
+These are executed asynchronously, so the order in which they appear may not be the order these operations are executed depending on the size of the req or res. 

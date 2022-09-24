@@ -32,7 +32,7 @@ const server = http.createServer((req, res) => {
       
     });
 
-    res.on('end', () => { //"stop" point
+    req.on('end', () => { //"stop" point
       //creating a buffer and interact with the data
       const parsedBody = Buffer.concat(body).toString();
       console.log('PARSE BODY\n', parsedBody); 

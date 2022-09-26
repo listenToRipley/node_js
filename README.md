@@ -6,7 +6,7 @@ This repository is learning/reviewing [Nodejs from Udemy](https://www.udemy.com/
 - [Server](./server)
 - [Assignment 1](./assign1) - create your own server
 - [Understanding NPM package](./understnading_npm)
-- [Express](./express/)
+- [Express](./express/) - faster way of creating servers
 
 ### Notes on node.js 
 Node allows for access to file systems and functionality both locally and within applications. 
@@ -52,4 +52,5 @@ VS Code, go to menu: Run -> Start Debugger
 fs - filesystem
 
 ##### Additional technologies used in the repository
-nodemon
+[nodemon](https://www.npmjs.com/package/nodemon)
+[express](https://expressjs.com/)

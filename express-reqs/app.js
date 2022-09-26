@@ -2,6 +2,8 @@ const express = require('express');
 const path = require('path'); 
 const bodyParser = require('body-parser');
 
+const rootDir = require('./util/path'); 
+
 const adminRoutes = require('./routes/admin'); 
 const shopRoutes = require('./routes/shop');
 
@@ -16,7 +18,7 @@ app.use(shopRoutes);
 
 //catch all for error handling
 app.use((req, res, next) => {
-  res.status(404).sendFile(path.join(__dirname, "views", "notFound.html")); 
+  res.status(404).sendFile(path.join(rootDir, "views", "notFound.html")); 
 });
 
 app.listen(3000);

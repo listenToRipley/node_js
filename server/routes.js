@@ -50,7 +50,15 @@ const requestHandler = (req, res) => { //req, res is cached by node.
 };
 
 // module.exports = requestHandler; // one way to export and have the function be accessible. 
-module.exports = {
-  handler: requestHandler,
-  someText: 'Some hard coded text into this document, maybe description of the handler?'
-}; // same thing as above, but allows multiples being exported. Way to drop,  but keep exports seperate. 
+// module.exports = {
+//   handler: requestHandler,
+//   someText: 'Some hard coded text into this document, maybe description of the handler?'
+// }; // same thing as above, but allows multiples being exported. Way to drop,  but keep exports separate. 
+
+// or you can 
+// module.exports.handler = requestHandler;
+// module.exports.someText = 'Some hard coded text into this document, maybe description of the handler?';
+
+// you the shortest version supported by node js
+module.handler = requestHandler;
+module.someText = 'Some hard coded text into this document, maybe description of the handler?';

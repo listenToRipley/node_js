@@ -8,9 +8,9 @@ const app = express();
 
 app.use(bodyParser.urlencoded({extended: false})); //register a parser 
 
-app.use(adminRoutes); // will automatically consider the application provided in the admin. 
+// if you have everything that starts with /admin, it will start at the route. 
+app.use('/admin',adminRoutes); // will automatically consider the application provided in the admin. 
 //order continues to matter.
-
 app.use(shopRoutes); 
 
 //catch all for error handling

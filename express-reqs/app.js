@@ -13,4 +13,9 @@ app.use(adminRoutes); // will automatically consider the application provided in
 
 app.use(shopRoutes); 
 
+//catch all for error handling
+app.use((req, res, next) => {
+  res.status(404).send('<h1>Page not found</h1>'); 
+});
+
 app.listen(3000);

@@ -8,7 +8,8 @@ This repository is learning/reviewing [Nodejs from Udemy](https://www.udemy.com/
 - [Understanding NPM package](./understnading_npm)
 - [Express](./express/) - faster way of creating servers, intro
 - [Assignment 2](./assign2/)
-- [Express Requests](./express-reqs/), how to post 
+- [Express Requests](./express-reqs/), how to route, post, get and add html 
+- [Assignment 3](./assign3/)
 
 ### Notes on node.js 
 Node allows for access to file systems and functionality both locally and within applications. 

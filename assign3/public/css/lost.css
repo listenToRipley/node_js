@@ -1,0 +1,11 @@
+body {
+  background-image: url(../images/still.jpg);
+  background-size: cover;
+}
+
+main {
+  color: white;
+  padding: 1rem 1rem;
+  margin: 0;
+  font-family: sans-serif;
+}

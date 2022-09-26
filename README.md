@@ -24,9 +24,31 @@ Terminal -> node first_name.js
 
 CTRL + C to exit terminal 
 
+Looks at the package.json and see scripts. Using `npm script_item_name`; 
+
+#### Errors
+Three Kinds
+1. Syntax - related to issues within the formatting, keywords or text provided within your code
+2. Runtime - incorrect execution/order where code should start and stop. 
+3. Logical - not predicted outcome.
+
+##### How to spot errors 
+- General 
+Looks for wiggly red lines.
+Start application and view the terminal window and it should give use the line. 
+
+Run the code and look for the error messages
+1. Look at the line where the item is missing
+2. Read your error message, look at the top of it.
+3. Use debugger is recommended
+
+##### How to start debugger w/ nodejs 
+VS Code, go to menu: Run -> Start Debugger 
+
 
 
 #### Glossary 
 fs - filesystem
 
 ##### Additional technologies used in the repository
+nodemon

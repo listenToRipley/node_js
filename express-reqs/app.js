@@ -5,11 +5,11 @@ const app = express();
 
 app.use(bodyParser.urlencoded({extended: false})); //register a parser 
 
-app.use('/add-product', (req, res, next) => {
+app.post('/add-product', (req, res, next) => { // post method now
   res.send('<form action="/product" method="POST"><input type="text" name="title"><button type="submit">Add Product</button></form>');
 });
 
-app.post('/product', (req, res, next) => {
+app.get('/product', (req, res, next) => { // get only run for get request
     console.log(req.body);
     res.redirect('/');
 });

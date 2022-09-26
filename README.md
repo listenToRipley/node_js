@@ -3,9 +3,10 @@ This repository is learning/reviewing [Nodejs from Udemy](https://www.udemy.com/
 
 ## Content in this repository
 - [First Application](./first_app)
-- [Server]()./server)
+- [Server](./server)
 - [Assignment 1](./assign1) - create your own server
 - [Understanding NPM package](./understnading_npm)
+- [Express](./express/)
 
 ### Notes on node.js 
 Node allows for access to file systems and functionality both locally and within applications. 

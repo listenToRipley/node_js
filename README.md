@@ -6,8 +6,9 @@ This repository is learning/reviewing [Nodejs from Udemy](https://www.udemy.com/
 - [Server](./server)
 - [Assignment 1](./assign1) - create your own server
 - [Understanding NPM package](./understnading_npm)
-- [Express](./express/) - faster way of creating servers
+- [Express](./express/) - faster way of creating servers, intro
 - [Assignment 2](./assign2/)
+- [Express Requests](./express-reqs/), how to post 
 
 ### Notes on node.js 
 Node allows for access to file systems and functionality both locally and within applications. 
@@ -55,3 +56,4 @@ fs - filesystem
 ##### Additional technologies used in the repository
 [nodemon](https://www.npmjs.com/package/nodemon)
 [express](https://expressjs.com/)
+[body-parser](https://www.npmjs.com/package/body-parser)

@@ -10,6 +10,7 @@ const shopRoutes = require('./routes/shop');
 const app = express();
 
 app.use(bodyParser.urlencoded({extended: false})); //register a parser 
+app.use(express.static(path.join(__dirname, "public")))//create static files - read only.
 
 // if you have everything that starts with /admin, it will start at the route. 
 app.use('/admin',adminRoutes); // will automatically consider the application provided in the admin. 

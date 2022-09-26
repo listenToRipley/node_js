@@ -1,6 +1,6 @@
 const fs = require('fs'); //file sync
 
-const requestHandler = (req, res) => {
+const requestHandler = (req, res) => { //req, res is cached by node. 
 
   const url = req.url; 
   const method = req.method;
@@ -49,4 +49,8 @@ const requestHandler = (req, res) => {
   //shouldn't write anything after it is end. This is how it will be sent back to the client. 
 };
 
-module.exports = requestHandler; // one way to export 
+// module.exports = requestHandler; // one way to export and have the function be accessible. 
+module.exports = {
+  handler: requestHandler,
+  someText: 'Some hard coded text into this document, maybe description of the handler?'
+}; // same thing as above, but allows multiples being exported. Way to drop,  but keep exports seperate. 

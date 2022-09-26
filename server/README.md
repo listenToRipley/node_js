@@ -10,3 +10,5 @@ Incoming data is sent via a stream. A stream is an on going process and allows r
 See req.on() for more details. 
 
 These are executed asynchronously, so the order in which they appear may not be the order these operations are executed depending on the size of the req or res. 
+
+Req and res are cached by node, so that is part of the reason you must restart the server on changes. The only exportable really is the readable content, not writeable. 

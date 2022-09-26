@@ -8,9 +8,4 @@ router.get('/cryptid', (req, res, next) => {
   res.sendFile(path.join(rootDir, "views", "cryptid.html"));
 }); 
 
-router.post('/cryptid', (req, res, next) => {
-  console.log(req.body);
-  res.redirect('/');
-});
-
 module.exports = router

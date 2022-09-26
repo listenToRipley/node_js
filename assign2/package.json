@@ -1,6 +1,7 @@
 {
   "name": "assign2",
   "version": "1.0.0",
+  "repository": "https://github.com/listenToRipley/node_js",
   "description": "1. Create an npm    - install express.js and nodemon  2. Create express.js app    - run two middleware functions     - log something   - return a response  3. Comment out the middleware functions    - create paths      \"/\"     \"/users\"",
   "main": "index.js",
   "scripts": {
@@ -8,7 +9,7 @@
     "start": "nodemon app.js",
     "start-server": "node app.js"
   },
-  "author": "",
+  "author": "Natalie Kendrick",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",

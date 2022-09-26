@@ -1,21 +1,16 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
+const adminRoutes = require('./routes/admin'); 
+const shopRoutes = require('./routes/shop');
+
 const app = express();
 
 app.use(bodyParser.urlencoded({extended: false})); //register a parser 
 
-app.post('/add-product', (req, res, next) => { // post method now
-  res.send('<form action="/product" method="POST"><input type="text" name="title"><button type="submit">Add Product</button></form>');
-});
+app.use(adminRoutes); // will automatically consider the application provided in the admin. 
+//order continues to matter.
 
-app.get('/product', (req, res, next) => { // get only run for get request
-    console.log(req.body);
-    res.redirect('/');
-});
-
-app.use('/', (req, res, next) => {
-  res.send('<h1>Hello from Express!</h1>');
-});
+app.use(shopRoutes); 
 
 app.listen(3000);

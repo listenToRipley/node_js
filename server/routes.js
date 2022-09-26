@@ -9,7 +9,7 @@ const requestHandler = (req, res) => { //req, res is cached by node.
   if (url === '/') {
     res.setHeader('Content-Type', 'text/html'); //attach header with meta information. <formatting the write command
     res.write('<html>');
-    res.write('<head><title>Enter Message</title><head>');
+    res.write('<head><title>Enter Message</title></head>');
     res.write('<body><form action="/message" method="POST"><input type="text" placeholder="enter message here" name="message"><button type="submit">Send</button></form></body>');
     res.write('</html>');
     return res.end();

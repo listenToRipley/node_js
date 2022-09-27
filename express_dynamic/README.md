@@ -18,6 +18,9 @@ If you create a .pug file, using the html5 template, the pug formatting will aut
 This is a simplified HTML formatting. 
 Indentation does matter.
 
+Adding content dynamically so you only have to render the specific sections with the keyword `block`.
+You will used `extends` to the path of the main pug document and add `block typeName` and then indent with the type information.
+
 #### EJS
 
 #### Handlebars 

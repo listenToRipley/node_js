@@ -10,3 +10,14 @@ Examples of such templates:
 * [EJS](https://ejs.co/)
 * [Pug (aka Jade)](https://pugjs.org/api/getting-started.html)
 * [Handlebars (specifically express-handlebars)](https://github.com/express-handlebars/express-handlebars)
+
+Some template engines are integrated into to express and can be called and predefined using `app.set();`. This is used in conjunction with the `res.render();` used within the route. 
+
+#### Pug
+If you create a .pug file, using the html5 template, the pug formatting will automatically be included.
+This is a simplified HTML formatting. 
+Indentation does matter.
+
+#### EJS
+
+#### Handlebars 

@@ -10,6 +10,7 @@ This repository is learning/reviewing [Nodejs from Udemy](https://www.udemy.com/
 - [Assignment 2](./assign2/)
 - [Express Requests](./express-reqs/), how to route, post, get and add html 
 - [Assignment 3](./assign3/)
+- [Dynamic Content & Templating](./express_dynamic/)
 
 ### Notes on node.js 
 Node allows for access to file systems and functionality both locally and within applications. 

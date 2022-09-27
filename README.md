@@ -2,6 +2,7 @@
 This repository is learning/reviewing [Nodejs from Udemy](https://www.udemy.com/course/nodejs-the-complete-guide/learn/lecture/11561820?start=60#overview)
 
 ## Content in this repository
+* These sections were added in the order they were worked on.
 - [First Application](./first_app)
 - [Server](./server)
 - [Assignment 1](./assign1) - create your own server
@@ -50,12 +51,15 @@ Run the code and look for the error messages
 ##### How to start debugger w/ nodejs 
 VS Code, go to menu: Run -> Start Debugger 
 
-
-
 #### Glossary 
 fs - filesystem
 
 ##### Additional technologies used in the repository
 [nodemon](https://www.npmjs.com/package/nodemon)
 [express](https://expressjs.com/)
-[body-parser](https://www.npmjs.com/package/body-parser)
+[body-parser](https://www.npmjs.com/package/body-parser) - currently included as integrations, but has been removed in the past. To prevent issues with future version, best practice is to always install. 
+
+Templating tools: 
+* [EJS](https://ejs.co/)
+* [Pug (aka Jade)](https://pugjs.org/api/getting-started.html)
+* [Handlebars (specifically express-handlebars)](https://github.com/express-handlebars/express-handlebars)

@@ -2,6 +2,7 @@ const path = require('path');
 
 const express = require('express');
 const bodyParser = require('body-parser');
+const expressHBs = require('express-handlebars'); 
 
 const app = express();
 

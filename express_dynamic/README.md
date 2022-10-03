@@ -24,3 +24,5 @@ You will used `extends` to the path of the main pug document and add `block type
 #### EJS
 
 #### Handlebars 
+
+Package is not auto installed by express, this will have to be imported to be viewed. 

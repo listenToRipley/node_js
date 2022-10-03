@@ -6,7 +6,8 @@ const expressHBs = require('express-handlebars');
 
 const app = express();
 
-//the name provided here needs to match the reference name provided in app.set second agr. 
+//the name provided here needs to match the reference name provided in app.set second agr.
+//the name given here will also effect the file reference title.  
 app.engine('hbs', expressHBs); 
 
 // app.set('view engine', 'pug'); // this works with pug as it "self registers" with express and becomes accessible to express. 

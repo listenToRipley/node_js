@@ -7,11 +7,11 @@ const expressHBs = require('express-handlebars');
 const app = express();
 
 //the name provided here needs to match the reference name provided in app.set second agr. 
-app.engine('handlebars', expressHBs); 
+app.engine('hbs', expressHBs); 
 
 // app.set('view engine', 'pug'); // this works with pug as it "self registers" with express and becomes accessible to express. 
 
-app.set('view engine', 'handlebars')
+app.set('view engine', 'hbs')
 app.set('views', 'views'); // how to see the location of the html and where the template should exist 
 
 const adminData = require('./routes/admin');

@@ -24,5 +24,17 @@ You will used `extends` to the path of the main pug document and add `block type
 #### EJS
 
 #### Handlebars 
+Logic statements will not be completed by HBS, but instead must be passed as keys with perviously completed within your JS file. 
+
+`{{#if}} key {{/if}}` - if statement 
+`{{#if}} key {{else}} <span> html statement </span> {{/if}}` - if else statement
+`{{#each}} key {{/each}}` - each statement 
+`{{{ body }}}` - passing templated content into the main-layout
+
+Variables inside engine 
+
+layoutDir: "views/layout" - location of main template
+defaultLayout: "main",  - name of main template 
+extname: "hbs" - setting the name of the extensions as set in the first variable, but must be restarted here or will default to handlebars.
 
 Package is not auto installed by express, this will have to be imported to be viewed. 

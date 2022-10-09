@@ -10,7 +10,7 @@ const app = express();
 //the name given here will also effect the file reference title.  
 app.engine('hbs', expressHBs({
     layoutDir: "views/layout", 
-    defaultLayout: "main", 
+    defaultLayout: "main-layout", 
     extname: "hbs" // setting the name of the extensions as set in the first variable, but must be restarted here or will default to handlebars.
 })); 
 

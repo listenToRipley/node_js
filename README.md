@@ -26,7 +26,7 @@ Node allows for access to file systems and functionality both locally and within
   * Response  - return response (rendering in formats HTML, JSON, XML etc...)
 
 #### Run tools 
-Terminal -> node first_name.js
+Terminal -> node first_name.js 
 
 CTRL + C to exit terminal 
 

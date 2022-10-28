@@ -54,3 +54,4 @@ Placeholders `<% %>` - this also allows for JS to be written inside of it. See [
 Placeholder for VALUE `<%= VALUE %>`  
 
 `<%-  %>` - input unescaped HTML, which as importing html.
+This should also include the imported partials. `<%- include('relative path without a starting /') %>`

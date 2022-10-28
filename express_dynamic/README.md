@@ -43,5 +43,6 @@ EJS has a combination of functionality between Pug and Handlebars.
 You can use some JS inside this, you can use if statements, but can still you HTML.
 It does not support "layouts" 
 
-Placeholders `<% %>`
+Placeholders `<% %>` - this also allows for JS to be written inside of it. See [shop.ejs](.\views\shop.ejs) for examples
+
 Placehodler for VALUE `<%= VALUE %>`

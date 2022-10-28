@@ -39,4 +39,9 @@ Package is not auto installed by express, this will have to be imported to be vi
 
 #### EJS
 
-EJS has a combination of functionality between Pug and Handlebars
+EJS has a combination of functionality between Pug and Handlebars. 
+You can use some JS inside this, you can use if statements, but can still you HTML.
+It does not support "layouts" 
+
+Placeholders `<% %>`
+Placehodler for VALUE `<%= VALUE %>`

@@ -21,8 +21,6 @@ Indentation does matter.
 Adding content dynamically so you only have to render the specific sections with the keyword `block`.
 You will used `extends` to the path of the main pug document and add `block typeName` and then indent with the type information.
 
-#### EJS
-
 #### Handlebars 
 Logic statements will not be completed by HBS, but instead must be passed as keys with perviously completed within your JS file. 
 
@@ -38,3 +36,7 @@ defaultLayout: "main",  - name of main template
 extname: "hbs" - setting the name of the extensions as set in the first variable, but must be restarted here or will default to handlebars.
 
 Package is not auto installed by express, this will have to be imported to be viewed. 
+
+#### EJS
+
+EJS has a combination of functionality between Pug and Handlebars

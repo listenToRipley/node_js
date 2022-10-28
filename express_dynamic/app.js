@@ -8,15 +8,16 @@ const app = express();
 
 //the name provided here needs to match the reference name provided in app.set second agr.
 //the name given here will also effect the file reference title.  
-app.engine('hbs', expressHBs({
-    layoutDir: "views/layout", 
-    defaultLayout: "main-layout", 
-    extname: "hbs" // setting the name of the extensions as set in the first variable, but must be restarted here or will default to handlebars.
-})); 
+// app.engine('hbs', expressHBs({
+//     layoutDir: "views/layout", 
+//     defaultLayout: "main-layout", 
+//     extname: "hbs" // setting the name of the extensions as set in the first variable, but must be restarted here or will default to handlebars.
+// })); 
 
 // app.set('view engine', 'pug'); // this works with pug as it "self registers" with express and becomes accessible to express. 
 
-app.set('view engine', 'hbs')
+// app.set('view engine', 'hbs')
+app.set('view engine', 'ejs')
 app.set('views', 'views'); // how to see the location of the html and where the template should exist 
 
 const adminData = require('./routes/admin');

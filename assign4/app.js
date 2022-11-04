@@ -10,7 +10,6 @@ app.set('views', 'views');
 
 const main = require('./routes/main');
 const users = require('./routes/users');
-console.log(users)
 
 app.use(bodyParser.urlencoded({extended: false}));
 

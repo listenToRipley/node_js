@@ -6,16 +6,18 @@ const main = require('./main');
 
 const router = express.Router(); 
 
+console.log(main.users)
+
 router.get('/users', (req, res, next) => {
     console.log('users.js', main.users)
 
     res.render('users', {
         users: main.users,
         pageTitle: 'All Users',
-        hasUsers: main.users.length > 0,
+        path: '/users',
         usersActive: true,
         usersCSS: true,
     })
 });
 
-module.export = router; 
+module.exports = router;

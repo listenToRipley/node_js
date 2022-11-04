@@ -2,11 +2,10 @@
 </head>
 
 <body>
-
     <%- include('includes/nav.ejs') %>
 
     <main>
-        <% if (hasUsers) { %>
+        <% if (users.length > 0) { %>
         <div class="list">
             <% for (let user of users) { %>
                 <ul class="card user">

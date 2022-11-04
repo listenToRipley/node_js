@@ -6,19 +6,19 @@ const router = express.Router();
 
 const users = []
 
-router.get('/add-user', (req, res, next) => {
-    res.render('add-user', {
+router.get('/', (req, res, next) => {
+    res.render('main', {
         pageTitle: 'Add User',
-        path: '/add-user',
-        activeAddUser: true,
+        path: '/main',
+        activeMain: true,
         mainCSS: true,
         formCSS: true,
     });
 });
 
-router.post('/add-user', (req, res, next) => {
+router.post('/', (req, res, next) => {
     users.push({ username: req.body.username })
-    res.redirect('/')
+    res.redirect('/users')
 });
 
 exports.routes = router; 

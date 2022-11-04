@@ -19,7 +19,7 @@ app.use('/', main.routes);
 app.use(users); 
 
 app.use((req, res, next) => {
-    res.status(400).render('404', {pageTitle:"Page Not Found"})
+    res.status(400).render('404', {pageTitle:"Page Not Found", path:"Error"})
 });
 
 app.listen(3000); 

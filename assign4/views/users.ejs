@@ -7,11 +7,12 @@
     <main>
         <% if (users.length > 0) { %>
         <div class="list">
-            <% for (let user of users) { %>
-                <ul class="card user">
+            <ul class="user">            
+                <% for (let user of users) { %>
                     <li> <%= user.username %> </li>
-                </article>
-            <% } %>
+                <% } %>
+            </ul>
+            
         </div>
         <% } else { %>
             <h1>No Users Found!</h1>

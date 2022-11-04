@@ -1,10 +1,15 @@
-## Assignment 4
+# Assignment 4
 
-### Requirements
+## Requirements
+
 - Two routes:
-    * Base route "/"
+
+  - Base route "/"
         Should have a form allowing users to input their name
         Store the user names on submit.
-    * "/users"
+
+  - "/users"
         Outputs a unordered list with the user names.  
             Or an error if there are not users.
+
+- Create templates to output this information in any type.

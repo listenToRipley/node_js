@@ -1,0 +1,21 @@
+<%- include('includes/head.ejs') %>
+</head>
+
+<body>
+
+    <%- include('includes/nav.ejs') %>
+
+    <main>
+        <% if (hasUsers) { %>
+        <div class="grid">
+            <% for (let user of users) { %>
+                <ul class="card user">
+                    <li> <%= user.username %> </li>
+                </article>
+            <% } %>
+        </div>
+        <% } else { %>
+            <h1>No Users Found!</h1>
+        <% } %>
+    </main>
+<%- include('includes/end.ejs') %>

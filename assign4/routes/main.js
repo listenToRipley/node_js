@@ -16,11 +16,6 @@ router.get('/', (req, res, next) => {
     });
 });
 
-router.post('/', (req, res, next) => {
-    users.push({ username: req.body.username })
-    res.redirect('/users')
-});
-
 exports.routes = router; 
 
 exports.users = users; 

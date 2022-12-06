@@ -6,15 +6,16 @@ This repository is learning/reviewing [Nodejs from Udemy](https://www.udemy.com/
 
 * These sections were added in the order they were worked on.
 
-* [First Application](./first_app)
-* [Assignment 1](./assign1) - create your own server
-* [Understanding NPM package](./understnading_npm)
-* [Express](./express/) - faster way of creating servers, intro
-* [Assignment 2](./assign2/)
-* [Express Requests](./express-reqs/), how to route, post, get and add html
-* [Assignment 3](./assign3/)
-* [Dynamic Content & Templating](./express_dynamic/)
-* [Assignment 4](./assign4/)
+* [First Application](./first_app/README.md)
+* [Assignment 1](./assign1/README.md) - create your own server
+* [Understanding NPM package](./understnading_npm/README.md)
+* [Express](./express/README.md) - faster way of creating servers, intro
+* [Assignment 2](./assign2/README.md)
+* [Express Requests](./express-reqs/README.md), how to route, post, get and add html
+* [Assignment 3](./assign3/README.md)
+* [Dynamic Content & Templating](./express_dynamic/README.md)
+* [Assignment 4](./assign4/README.md)
+* [Model View Controller - MVC](./mvc/README.md)
 
 ### Notes on node.js
 

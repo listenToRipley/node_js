@@ -11,5 +11,8 @@ router.get('/add-product', productsController.getAddProduct);
 
 router.post('/add-product', productsController.postAddProducts);
 
-exports.routes = router;
-exports.products = products;
+//since we have adjusted how we are handling data, we would just export the whole router now.
+// exports.routes = router;
+// exports.products = products;
+
+module.exports = router;

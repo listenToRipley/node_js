@@ -11,16 +11,14 @@ const p = path.join(
     'products.json'
     );
 
-const getProductsFromFile = (callback) => {
-
-
-    fs.readFile(p, (error, data) => {
-        if (error) {
+const getProductsFromFile = callback => {
+    fs.readFile(p, (err, fileContent) => {
+        if (err) {
             callback([]);
+        } else {
+            callback(JSON.parse(fileContent));
         }
-
-        callback(JSON.parse(data)); 
-    })
+    });
 };
 
 module.exports = class Products  {

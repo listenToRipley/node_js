@@ -2,7 +2,7 @@
 
 ## Models
 
-Responsible for representing data and working with data - saving fetching etc. 
+Responsible for representing data and working with data - saving fetching etc.
 
 ## Views
 

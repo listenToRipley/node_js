@@ -30,14 +30,6 @@ module.exports = class Products  {
 
     //method from class allowing us to save to the products array. 
     save() {
-        // products.push(this); create content that is saved. 
-    
-        // fs.readFile(p, (error, data) => {
-        //     let products = [];
-        //     if (data) {
-        //         products = JSON.parse(data);
-        //     };
-
         getProductsFromFile((products) => {
 
             products.push(this); //make sure you use this to keep context for the class. 
@@ -48,22 +40,10 @@ module.exports = class Products  {
 
     };
 
-    //replaced by helper at the top. 
+
     // //static calls on this object only
      static fetchAll(callback) { //provides a reference check
         getProductsFromFile(); 
-    //     const p = path.join(
-    //         path.dirname(process.mainModule.filename), 
-    //         'data', 
-    //         'products.json'
-    //         );
 
-    //     fs.readFile(p, (error,data) => {
-    //         if (error) {
-    //             callback([])
-    //         }
-
-    //         callback(JSON.parse(data)); 
-    //     })
     };
 };

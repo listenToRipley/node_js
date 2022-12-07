@@ -1,6 +1,9 @@
 //exports out the functionality allowing the router to still have access to all the data provided from this call.
 
-let products = [] // this would be the array to add content to. 
+// let products = [] // this would be the array to add content to. 
+//replaceing the products array with a module 
+
+const Product = require('../modules/product'); //use capital for classes
 
 exports.getAddProduct = (req, res, next) => {
     res.render('add-product', {
@@ -13,12 +16,14 @@ exports.getAddProduct = (req, res, next) => {
 };
 
 exports.postAddProducts = (req, res, next) => {
-    products.push({ title: req.body.title });
+    const product = new Product(req.body.title)
+    product.save(); // call the method from product
     res.redirect('/');
 };
 
 
 exports.getShop = (req, res, next) => {
+    let products = Product.fetchAll(); // get all products
     res.render('shop', {
         prods: products, 
         pageTitle: 'Shop', 

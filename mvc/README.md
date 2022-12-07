@@ -4,6 +4,8 @@
 
 Responsible for representing data and working with data - saving fetching etc.
 
+We should manage out data. 
+
 ## Views
 
 Reference to what the users sees and didn't see the code, but the data output.

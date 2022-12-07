@@ -23,13 +23,20 @@ exports.postAddProducts = (req, res, next) => {
 
 
 exports.getShop = (req, res, next) => {
-    let products = Product.fetchAll(); // get all products
-    res.render('shop', {
-        prods: products, 
-        pageTitle: 'Shop', 
-        path:"/shop", 
-        hasProducts: products.length > 0, 
-        activeShop: true,
-        productsCSS: true,
-    }); 
+    // let products = Product.fetchAll(); // get all products
+
+    //provide callback here for fetching data. 
+
+    Product.fetchAll((products) => {
+        //waits for information before trying to render here. 
+        res.render('shop', {
+            prods: products, 
+            pageTitle: 'Shop', 
+            path:"/shop", 
+            hasProducts: products.length > 0, 
+            activeShop: true,
+            productsCSS: true,
+        }); 
+
+    })
 };

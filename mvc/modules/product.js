@@ -32,7 +32,7 @@ module.exports = class Products  {
     };
 
     //static calls on this object only
-    static fetchAll() {
+    static fetchAll(callback) { //provides a reference check
 
         const p = path.join(
             path.dirname(process.mainModule.filename), 
@@ -42,10 +42,10 @@ module.exports = class Products  {
 
         fs.readFile(p, (error,data) => {
             if (error) {
-                return [];
+                callback([])
             }
 
-            return JSON.parse(data); 
+            callback(JSON.parse(data)); 
         })
     };
 };

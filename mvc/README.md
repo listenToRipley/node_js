@@ -4,7 +4,7 @@
 
 Responsible for representing data and working with data - saving fetching etc.
 
-We should manage out data. 
+We should manage out data.
 
 ## Views
 
@@ -14,3 +14,7 @@ Reference to what the users sees and didn't see the code, but the data output.
 
 The connecting factor from models to views. Contains the logic that connects the two items.
 This utilizes the routes to output that data from the controller to a predicable location.
+
+### Resources
+
+[Read More Here](https://developer.mozilla.org/en-US/docs/Glossary/MVC)

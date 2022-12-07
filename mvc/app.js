@@ -2,7 +2,6 @@ const path = require('path');
 
 const express = require('express');
 const bodyParser = require('body-parser');
-const expressHBs = require('express-handlebars'); 
 
 const app = express();
 
@@ -15,7 +14,7 @@ const shopRoutes = require('./routes/shop');
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/admin', adminRoutes.routes); // allows for ALL routes from adminData to be accessible.
+app.use('/admin', adminRoutes); // allows for ALL routes from adminData to be accessible.
 app.use(shopRoutes);
 
 app.use((req, res, next) => {

@@ -17,19 +17,9 @@ This repository is learning/reviewing [Nodejs from Udemy](https://www.udemy.com/
 * [Assignment 4](./assign4/README.md)
 * [Model View Controller - MVC](./mvc/README.md)
 
-### Notes on node.js
+### Notes
 
-Node allows for access to file systems and functionality both locally and within applications.
-
-* Use cases
-
-* JS Runtime
-* Server-side code
-* Utility Script
-* Build Tools  
-* Run Server - creates and listens for reqs.
-  * Business Logic - handling req. validate input, connect to db
-  * Response  - return response (rendering in formats HTML, JSON, XML etc...)
+Can be viewed in [this file](./GeneralNotes.md)
 
 #### Run tools
 
@@ -38,34 +28,6 @@ Terminal -> node first_name.js
 CTRL + C to exit terminal
 
 Looks at the package.json and see scripts. Using `npm script_item_name`;
-
-#### Errors
-
-Three Kinds
-
-1. Syntax - related to issues within the formatting, keywords or text provided within your code
-2. Runtime - incorrect execution/order where code should start and stop.
-3. Logical - not predicted outcome.
-
-##### How to spot errors
-
-* General
-Looks for wiggly red lines.
-Start application and view the terminal window and it should give use the line.
-
-Run the code and look for the error messages
-
-1. Look at the line where the item is missing
-2. Read your error message, look at the top of it.
-3. Use debugger is recommended
-
-##### How to start debugger w/ nodejs
-
-VS Code, go to menu: Run -> Start Debugger
-
-#### Glossary
-
-fs - filesystem
 
 ##### Additional technologies used in the repository
 
